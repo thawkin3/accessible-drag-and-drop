@@ -16,10 +16,14 @@
   flex-direction: row;
   width: 100%;
   align-items: flex-start;
-  justify-content: space-between;
   border: 1px solid #000;
   border-radius: 0.25rem;
   background: #fff;
   padding: 1.5rem;
   color: #000;
+}
+
+.drag-handle {
+  margin-right: 1rem;
+  cursor: pointer;
 }

@@ -1,5 +1,8 @@
 import React from 'react';
-import { ReactSortableHOCDemo } from './components/react-sortable-hoc/ReactSortableHocDemo';
+import { ReactSortableHOCDemo1 } from './components/react-sortable-hoc/ReactSortableHocDemo1';
+import { ReactSortableHOCDemo2 } from './components/react-sortable-hoc/ReactSortableHocDemo2';
+import { ReactSortableHOCDemo3 } from './components/react-sortable-hoc/ReactSortableHocDemo3';
+import { ReactSortableHOCDemo4 } from './components/react-sortable-hoc/ReactSortableHocDemo4';
 import { DndKitDemo } from './components/dnd-kit/DndKitDemo';
 import { ReactDndDemo } from './components/react-dnd/ReactDndDemo';
 import { ReactBeautifulDndDemo } from './components/react-beautiful-dnd/ReactBeautifulDndDemo';
@@ -18,7 +21,10 @@ export const App = () => (
         react-sortable-hoc
       </a>
     </h2>
-    <ReactSortableHOCDemo />
+    <ReactSortableHOCDemo1 />
+    <ReactSortableHOCDemo2 />
+    <ReactSortableHOCDemo3 />
+    <ReactSortableHOCDemo4 />
     <hr />
     <h2>
       <a

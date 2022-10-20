@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { SortableContainer, SortableElement } from 'react-sortable-hoc';
 import { arrayMoveImmutable } from 'array-move';
 
-export const ReactSortableHOCDemo = () => {
+export const ReactSortableHOCDemo3 = () => {
   const [items, setItems] = useState([
     'Item 1',
     'Item 2',
@@ -18,11 +18,12 @@ export const ReactSortableHOCDemo = () => {
 
   return (
     <>
-      <h3>Basic Usage</h3>
-      <h4>Problems</h4>
+      <h3>Basic Usage (Keyboard Operable)</h3>
       <ul>
+        <li>Entire item is draggable</li>
         <li>Can't select text</li>
-        <li>Not keyboard or screen reader accessible</li>
+        <li>Can tab to the item, hit Space to activate keyboard reordering, then move the item with the arrow keys, then complete the action with Space or cancel the action with Escape</li>
+        <li>No screen reader announcements</li>
       </ul>
       <SortableList items={items} onSortEnd={onSortEnd} />
     </>
@@ -30,7 +31,7 @@ export const ReactSortableHOCDemo = () => {
 };
 
 const SortableItem = SortableElement(({ value }) => (
-  <li className="card">{value}</li>
+  <li className="card" tabIndex={0}>{value}</li>
 ));
 
 const SortableList = SortableContainer(({ items }) => {
