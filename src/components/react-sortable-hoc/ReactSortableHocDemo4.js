@@ -1,15 +1,19 @@
 import React, { useState } from 'react';
-import { SortableContainer, SortableElement, SortableHandle } from 'react-sortable-hoc';
+import {
+  SortableContainer,
+  SortableElement,
+  SortableHandle,
+} from 'react-sortable-hoc';
 import { arrayMoveImmutable } from 'array-move';
 
 export const ReactSortableHOCDemo4 = () => {
   const [items, setItems] = useState([
-    'Item 1',
-    'Item 2',
-    'Item 3',
-    'Item 4',
-    'Item 5',
-    'Item 6',
+    'BoJack Horseman',
+    'Diane Nguyen',
+    'Mr. Peanutbutter',
+    'Todd Chavez',
+    'Sarah Lynn',
+    'Princess Carolyn',
   ]);
 
   const onSortEnd = ({ oldIndex, newIndex }) => {
@@ -22,15 +26,35 @@ export const ReactSortableHOCDemo4 = () => {
       <ul>
         <li>Only drag handle is draggable</li>
         <li>Can select text</li>
-        <li>Can tab to the item drag handle, hit Space to activate keyboard reordering, then move the item with the arrow keys, then complete the action with Space or cancel the action with Escape</li>
-        <li>No screen reader announcements</li>
+        <li>
+          Can tab to the item drag handle, hit Space to activate keyboard
+          reordering, then move the item with the arrow keys, then complete the
+          action with Space or cancel the action with Escape
+        </li>
+        <li>
+          Not clear to screen reader users that the drag handles are interactive
+        </li>
+        <li>
+          No screen reader instructions or announcements as you interact with
+          the items
+        </li>
       </ul>
-      <SortableList items={items} onSortEnd={onSortEnd} useDragHandle />
+      <SortableList
+        items={items}
+        onSortEnd={onSortEnd}
+        lockAxis="y"
+        lockToContainerEdges
+        useDragHandle
+      />
     </>
   );
 };
 
-const DragHandle = SortableHandle(() => <span className="drag-handle" tabIndex={0}>::</span>);
+const DragHandle = SortableHandle(() => (
+  <span className="drag-handle" tabIndex={0}>
+    ::
+  </span>
+));
 
 const SortableItem = SortableElement(({ value }) => (
   <li className="card">

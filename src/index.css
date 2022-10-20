@@ -24,6 +24,10 @@ body {
   box-sizing: border-box;
 }
 
+hr {
+  margin: 1rem 0;
+}
+
 .button {
   padding: 0.5rem 0.75rem;
   font-size: 1rem;

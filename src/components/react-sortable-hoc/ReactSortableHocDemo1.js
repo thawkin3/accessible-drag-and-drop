@@ -4,12 +4,12 @@ import { arrayMoveImmutable } from 'array-move';
 
 export const ReactSortableHOCDemo1 = () => {
   const [items, setItems] = useState([
-    'Item 1',
-    'Item 2',
-    'Item 3',
-    'Item 4',
-    'Item 5',
-    'Item 6',
+    'BoJack Horseman',
+    'Diane Nguyen',
+    'Mr. Peanutbutter',
+    'Todd Chavez',
+    'Sarah Lynn',
+    'Princess Carolyn',
   ]);
 
   const onSortEnd = ({ oldIndex, newIndex }) => {
@@ -24,7 +24,12 @@ export const ReactSortableHOCDemo1 = () => {
         <li>Can't select text</li>
         <li>Not keyboard or screen reader accessible</li>
       </ul>
-      <SortableList items={items} onSortEnd={onSortEnd} />
+      <SortableList
+        items={items}
+        onSortEnd={onSortEnd}
+        lockAxis="y"
+        lockToContainerEdges
+      />
     </>
   );
 };

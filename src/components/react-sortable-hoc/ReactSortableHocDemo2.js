@@ -1,15 +1,19 @@
 import React, { useState } from 'react';
-import { SortableContainer, SortableElement, SortableHandle } from 'react-sortable-hoc';
+import {
+  SortableContainer,
+  SortableElement,
+  SortableHandle,
+} from 'react-sortable-hoc';
 import { arrayMoveImmutable } from 'array-move';
 
 export const ReactSortableHOCDemo2 = () => {
   const [items, setItems] = useState([
-    'Item 1',
-    'Item 2',
-    'Item 3',
-    'Item 4',
-    'Item 5',
-    'Item 6',
+    'BoJack Horseman',
+    'Diane Nguyen',
+    'Mr. Peanutbutter',
+    'Todd Chavez',
+    'Sarah Lynn',
+    'Princess Carolyn',
   ]);
 
   const onSortEnd = ({ oldIndex, newIndex }) => {
@@ -24,12 +28,20 @@ export const ReactSortableHOCDemo2 = () => {
         <li>Can select text</li>
         <li>Not keyboard or screen reader accessible</li>
       </ul>
-      <SortableList items={items} onSortEnd={onSortEnd} useDragHandle />
+      <SortableList
+        items={items}
+        onSortEnd={onSortEnd}
+        lockAxis="y"
+        lockToContainerEdges
+        useDragHandle
+      />
     </>
   );
 };
 
-const DragHandle = SortableHandle(() => <span className="drag-handle">::</span>);
+const DragHandle = SortableHandle(() => (
+  <span className="drag-handle">::</span>
+));
 
 const SortableItem = SortableElement(({ value }) => (
   <li className="card">

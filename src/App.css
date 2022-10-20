@@ -25,5 +25,5 @@
 
 .drag-handle {
   margin-right: 1rem;
-  cursor: pointer;
+  cursor: row-resize;
 }
