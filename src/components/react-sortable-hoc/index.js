@@ -16,6 +16,18 @@ export const ReactSortableHOCDemos = () => (
         react-sortable-hoc
       </a>
     </h2>
+    <h3>General Notes</h3>
+    <ul>
+      <li>Deprecated project</li>
+      <li>
+        Relies on the <code>findDOMNode</code> method
+      </li>
+      <li>
+        Says it's accessible, but in reality it needs a lot of work from you to
+        accomplish that
+      </li>
+      <li>Replaced by dnd-kit</li>
+    </ul>
     <ReactSortableHOCDemo1 />
     <ReactSortableHOCDemo2 />
     <ReactSortableHOCDemo3 />

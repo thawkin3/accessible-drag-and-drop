@@ -1,6 +1,6 @@
 import React from 'react';
 import { ReactSortableHOCDemos } from './components/react-sortable-hoc';
-import { DndKitDemo } from './components/dnd-kit/DndKitDemo';
+import { DndKitDemos } from './components/dnd-kit';
 import { ReactDndDemo } from './components/react-dnd/ReactDndDemo';
 import { ReactBeautifulDndDemo } from './components/react-beautiful-dnd/ReactBeautifulDndDemo';
 import './App.css';
@@ -11,16 +11,7 @@ export const App = () => (
     <hr />
     <ReactSortableHOCDemos />
     <hr />
-    <h2>
-      <a
-        href="https://github.com/clauderic/dnd-kit"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        dnd-kit
-      </a>
-    </h2>
-    <DndKitDemo />
+    <DndKitDemos />
     <hr />
     <h2>
       <a
