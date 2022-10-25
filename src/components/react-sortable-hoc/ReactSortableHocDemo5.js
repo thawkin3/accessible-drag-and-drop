@@ -64,7 +64,8 @@ export const ReactSortableHOCDemo5 = () => {
         </li>
         <li>
           Screen reader announcements are made as you interact with the items
-          (drag start, drag move, and drag end)
+          (drag start, drag move, and drag end) (no drag cancel event, which is
+          unfortunate)
         </li>
       </ul>
       <p className="screen-reader-text" id="drag-and-drop-instructions">
