@@ -27,3 +27,18 @@
   margin-right: 1rem;
   cursor: row-resize;
 }
+
+.screen-reader-text {
+  border: 0px;
+  clip: rect(0px, 0px, 0px, 0px);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0px;
+  position: absolute;
+  width: 1px;
+}
+
+.hidden {
+  display: none;
+}

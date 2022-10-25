@@ -21,7 +21,7 @@ export const ReactSortableHOCDemo4 = () => {
   };
 
   return (
-    <>
+    <section>
       <h3>With a Drag Handle (Keyboard Operable)</h3>
       <ul>
         <li>Only drag handle is draggable</li>
@@ -46,7 +46,7 @@ export const ReactSortableHOCDemo4 = () => {
         lockToContainerEdges
         useDragHandle
       />
-    </>
+    </section>
   );
 };
 

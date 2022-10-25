@@ -17,7 +17,7 @@ export const ReactSortableHOCDemo3 = () => {
   };
 
   return (
-    <>
+    <section>
       <h3>Basic Usage (Keyboard Operable)</h3>
       <ul>
         <li>Entire item is draggable</li>
@@ -39,7 +39,7 @@ export const ReactSortableHOCDemo3 = () => {
         lockAxis="y"
         lockToContainerEdges
       />
-    </>
+    </section>
   );
 };
 

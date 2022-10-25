@@ -1,8 +1,5 @@
 import React from 'react';
-import { ReactSortableHOCDemo1 } from './components/react-sortable-hoc/ReactSortableHocDemo1';
-import { ReactSortableHOCDemo2 } from './components/react-sortable-hoc/ReactSortableHocDemo2';
-import { ReactSortableHOCDemo3 } from './components/react-sortable-hoc/ReactSortableHocDemo3';
-import { ReactSortableHOCDemo4 } from './components/react-sortable-hoc/ReactSortableHocDemo4';
+import { ReactSortableHOCDemos } from './components/react-sortable-hoc';
 import { DndKitDemo } from './components/dnd-kit/DndKitDemo';
 import { ReactDndDemo } from './components/react-dnd/ReactDndDemo';
 import { ReactBeautifulDndDemo } from './components/react-beautiful-dnd/ReactBeautifulDndDemo';
@@ -12,19 +9,7 @@ export const App = () => (
   <main>
     <h1>Accessible Drag and Drop</h1>
     <hr />
-    <h2>
-      <a
-        href="https://github.com/clauderic/react-sortable-hoc"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        react-sortable-hoc
-      </a>
-    </h2>
-    <ReactSortableHOCDemo1 />
-    <ReactSortableHOCDemo2 />
-    <ReactSortableHOCDemo3 />
-    <ReactSortableHOCDemo4 />
+    <ReactSortableHOCDemos />
     <hr />
     <h2>
       <a
