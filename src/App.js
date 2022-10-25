@@ -1,8 +1,8 @@
 import React from 'react';
 import { ReactSortableHOCDemos } from './components/react-sortable-hoc';
 import { DndKitDemos } from './components/dnd-kit';
-import { ReactDndDemo } from './components/react-dnd/ReactDndDemo';
-import { ReactBeautifulDndDemo } from './components/react-beautiful-dnd/ReactBeautifulDndDemo';
+import { ReactDndDemos } from './components/react-dnd';
+import { ReactBeautifulDndDemos } from './components/react-beautiful-dnd';
 import './App.css';
 
 export const App = () => (
@@ -13,26 +13,8 @@ export const App = () => (
     <hr />
     <DndKitDemos />
     <hr />
-    <h2>
-      <a
-        href="https://github.com/react-dnd/react-dnd/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        react-dnd
-      </a>
-    </h2>
-    <ReactDndDemo />
+    <ReactDndDemos />
     <hr />
-    <h2>
-      <a
-        href="https://github.com/atlassian/react-beautiful-dnd"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        react-beautiful-dnd
-      </a>
-    </h2>
-    <ReactBeautifulDndDemo />
+    <ReactBeautifulDndDemos />
   </main>
 );
