@@ -101,6 +101,7 @@ const DragHandle = SortableHandle(({ value }) => (
     tabIndex={0}
     role="button"
     aria-label={`Drag handle for item: ${value}`}
+    // aria-roledescription="sortable"
   >
     ::
   </span>
