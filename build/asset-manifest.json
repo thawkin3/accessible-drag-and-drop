@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/accessible-drag-and-drop/build/static/css/main.89079146.css",
-    "main.js": "/accessible-drag-and-drop/build/static/js/main.646bf82e.js",
+    "main.js": "/accessible-drag-and-drop/build/static/js/main.fb578ecc.js",
     "static/js/787.9b3b278b.chunk.js": "/accessible-drag-and-drop/build/static/js/787.9b3b278b.chunk.js",
     "index.html": "/accessible-drag-and-drop/build/index.html",
     "main.89079146.css.map": "/accessible-drag-and-drop/build/static/css/main.89079146.css.map",
-    "main.646bf82e.js.map": "/accessible-drag-and-drop/build/static/js/main.646bf82e.js.map",
+    "main.fb578ecc.js.map": "/accessible-drag-and-drop/build/static/js/main.fb578ecc.js.map",
     "787.9b3b278b.chunk.js.map": "/accessible-drag-and-drop/build/static/js/787.9b3b278b.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.89079146.css",
-    "static/js/main.646bf82e.js"
+    "static/js/main.fb578ecc.js"
   ]
 }
