@@ -4,6 +4,14 @@ This project is meant to teach software engineers how to create accessible drag 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Main Takeaways
+
+1. Drag and drop functionality is inherently inaccessible because it requires the use of a mouse and fine motor control.
+2. Drag and drop functionality needs to be accessible for mouse users, keyboard users, and screen reader users.
+3. Keyboard users should be able to activate drag and drop mode and use the arrow keys to move items.
+4. Screen reader users should have adequate instructions and communication to know how to interact with the drag and drop functionality and also to know what is happening throughout the interaction.
+5. There are many third-party libraries that implement drag and drop functionality, all with varying levels of accessibility support.
+
 ## Available Scripts
 
 In the project directory, you can run:
