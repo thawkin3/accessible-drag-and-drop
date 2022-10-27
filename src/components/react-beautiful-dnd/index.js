@@ -14,7 +14,8 @@ export const ReactBeautifulDndDemos = () => (
     </h2>
     <h3>General Notes</h3>
     <ul>
-      <li>TODO</li>
+      <li>Created and maintained by Atlassian</li>
+      <li>Atlassian has delcared this project in maintenance mode, no more features, issues, or pull requests</li>
     </ul>
     <ReactBeautifulDndDemo1 />
   </>
